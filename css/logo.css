@@ -1,0 +1,25 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+}
+.logo img {
+  display: block;
+  width: 156px;
+  height: auto;
+}
+.site-header .logo img {
+  width: 156px;
+}
+footer .logo img {
+  width: 142px;
+  filter: brightness(0) invert(1);
+}
+@media (max-width: 560px) {
+  .logo img,
+  .site-header .logo img {
+    width: 126px;
+  }
+  footer .logo img {
+    width: 132px;
+  }
+}

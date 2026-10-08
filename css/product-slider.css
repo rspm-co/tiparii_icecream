@@ -1,0 +1,90 @@
+.products {
+  background: linear-gradient(135deg, #00a0e3, #0098dd, #0077b8);
+}
+.products .eyebrow,
+.products h2 {
+  color: #ffffff;
+}
+.products .eyebrow {
+  opacity: 0.88;
+}
+.slider-controls {
+  display: flex;
+  gap: 8px;
+}
+.slider-controls-bottom {
+  justify-content: center;
+  margin-top: 8px;
+}
+.slider-button {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--dark);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.slider-button:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
+}
+.product-carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding: 4px 2px 14px;
+}
+.product-carousel::-webkit-scrollbar {
+  display: none;
+}
+.cone-card {
+  flex: 0 0 calc((100% - 48px) / 4);
+  scroll-snap-align: start;
+  min-width: 0;
+  text-align: center;
+}
+.cone-image {
+  height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.cone-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  transition: transform 0.45s ease;
+}
+.cone-card:hover img {
+  transform: scale(1.05);
+}
+.cone-card h3 {
+  margin: 11px 0 1px;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+.cone-card span {
+  font-size: 0.7rem;
+  color: #dff7ff;
+}
+@media (max-width: 850px) {
+  .cone-card {
+    flex-basis: calc((100% - 32px) / 3);
+  }
+}
+@media (max-width: 560px) {
+  .cone-card {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+  .cone-image {
+    height: 250px;
+  }
+}

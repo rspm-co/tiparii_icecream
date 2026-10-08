@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs><linearGradient id="cone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F5C46D"/><stop offset="1" stop-color="#C98228"/></linearGradient></defs>
+  <circle cx="24" cy="16" r="13" fill="#FF9FC4"/><path d="M13 22h22L24 45z" fill="url(#cone)" stroke="#9A5B19" stroke-width="1.5" stroke-linejoin="round"/><path d="m16 26 14 14M21 23l11 11M31 26 18 39M34 30 22 42" stroke="#A86820" stroke-width="1" opacity=".75"/><path d="M16 13c3-6 13-8 18-1" fill="none" stroke="#FFD5E5" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

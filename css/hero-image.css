@@ -1,0 +1,6 @@
+.hero-visual .image-frame {
+  background: #dce9bd;
+}
+.hero-visual .image-frame img {
+  object-position: center;
+}

@@ -1,0 +1,85 @@
+.location-card {
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+.location-card:hover,
+.location-card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  outline: none;
+}
+.location-card .location-action {
+  color: var(--dark);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+.location-card .location-action i {
+  font-size: 0.65rem;
+  margin-left: 3px;
+}
+.network-milestone {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 132px;
+  padding: 24px 28px;
+  border-radius: 13px;
+  color: #fff;
+  background: linear-gradient(135deg, #00a0e3, #0098dd, #0077b8);
+  box-shadow: 0 15px 30px rgba(0, 119, 184, 0.2);
+}
+.milestone-icon {
+  display: grid;
+  flex: 0 0 auto;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 1.3rem;
+}
+.milestone-kicker {
+  display: block;
+  margin-bottom: 2px;
+  color: #dff7ff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.network-milestone strong,
+.network-milestone p {
+  display: block;
+  margin: 0;
+  color: #fff;
+}
+.network-milestone strong {
+  font: 600 1.2rem Poppins, sans-serif;
+}
+.network-milestone strong b {
+  font-size: 2.1rem;
+  line-height: 1;
+}
+.network-milestone p {
+  color: #e2f7ff;
+  font-size: 0.84rem;
+}
+.milestone-trend {
+  margin-left: auto;
+  color: #dff7ff;
+  font-size: 1.65rem;
+  opacity: 0.8;
+}
+@media (max-width: 560px) {
+  .network-milestone {
+    grid-column: auto;
+    min-height: 0;
+    padding: 20px;
+  }
+  .milestone-trend {
+    display: none;
+  }
+}

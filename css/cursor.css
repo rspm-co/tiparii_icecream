@@ -1,0 +1,18 @@
+body,
+a,
+button,
+input,
+select,
+textarea,
+summary {
+  cursor:
+    url("../assets/icons/waffle-cone-cursor.svg") 24 24,
+    auto;
+}
+a,
+button,
+summary {
+  cursor:
+    url("../assets/icons/waffle-cone-cursor.svg") 24 24,
+    pointer;
+}

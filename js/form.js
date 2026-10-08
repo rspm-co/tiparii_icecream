@@ -1,6 +1,8 @@
 function initialiseForm() {
   const form = document.getElementById('franchiseForm');
   const status = document.getElementById('formStatus');
+  const budgetField = form.elements.budget;
+  if (budgetField) budgetField.closest('label')?.remove();
   const captcha = form.querySelector('.captcha');
   let captchaReady = false;
 

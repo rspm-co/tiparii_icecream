@@ -24,7 +24,7 @@ CREATE TABLE leads (
   name VARCHAR(120) NOT NULL,
   mobile VARCHAR(20) NOT NULL,
   city VARCHAR(120) NOT NULL,
-  investment_budget VARCHAR(80) NOT NULL,
+  investment_budget VARCHAR(80) NULL,
   preferred_location VARCHAR(180) NOT NULL,
   message TEXT NULL,
   source VARCHAR(50) NOT NULL DEFAULT 'website',

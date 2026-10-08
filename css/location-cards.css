@@ -3,6 +3,25 @@
     transform 0.22s ease,
     box-shadow 0.22s ease;
 }
+#locations {
+  background: #eaf8ff;
+}
+#locations .section-heading .eyebrow {
+  color: var(--dark);
+}
+#locations .section-heading h2 {
+  color: var(--ink);
+}
+#locations .section-heading > p:last-child {
+  color: var(--text);
+}
+#locations .search input {
+  border-color: var(--line);
+  background: #fff;
+}
+#locations .search i {
+  color: var(--dark);
+}
 .location-card:hover,
 .location-card:focus-visible {
   transform: translateY(-4px);

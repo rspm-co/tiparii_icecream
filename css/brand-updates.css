@@ -1,5 +1,5 @@
 .section {
-  padding: 48px 0;
+  padding: 28px 0;
 }
 .hero-grid {
   padding-bottom: 95px;
@@ -40,7 +40,7 @@
 .captcha-question{display:flex!important;align-items:center;justify-content:space-between;gap:14px;width:100%;margin:0!important;font-size:.75rem!important}.captcha-question span{display:flex;align-items:center;gap:7px}.captcha-question i{color:var(--blue);font-size:1rem}.captcha-question input{width:90px!important;margin:0!important;padding:8px 10px!important;text-align:center}.captcha-loading,.captcha-error{display:flex;align-items:center;gap:8px;font-size:.75rem}.captcha-loading i{color:var(--blue)}.captcha-error{color:#a46600}@media(max-width:560px){.captcha-question{align-items:flex-start;flex-direction:column}.captcha-question input{width:100%!important}}
 .highlights {
   padding: 26px 0;
-  background: linear-gradient(135deg, #00a0e3, #0098dd, #0077b8);
+  background: #00a0e3;
   color: #dcecf4;
 }
 .highlights-label {
@@ -89,6 +89,7 @@
 }
 .final-cta {
   padding: 68px 0;
+  background: #00a0e3;
 }
 footer {
   padding-top: 42px;
@@ -98,7 +99,7 @@ footer {
 }
 @media (max-width: 560px) {
   .section {
-    padding: 36px 0;
+    padding: 22px 0;
   }
   .hero-grid {
     padding-bottom: 76px;

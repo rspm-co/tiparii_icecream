@@ -550,15 +550,27 @@ a {
 }
 .faq-list summary i {
   color: var(--blue);
-  transition: transform 0.2s;
+  transition: transform 0.38s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .faq-list details[open] summary i {
   transform: rotate(45deg);
 }
 .faq-list p {
-  padding: 13px 35px 0 0;
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 35px 0 0;
   font-size: 0.88rem;
   margin: 0;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: max-height 0.46s cubic-bezier(0.22, 1, 0.36, 1), padding 0.46s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.24s ease, transform 0.46s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.faq-list details[open] p {
+  max-height: 160px;
+  padding-top: 13px;
+  opacity: 1;
+  transform: translateY(0);
 }
 .enquire {
   background: linear-gradient(120deg, #f1fbff, #fff);

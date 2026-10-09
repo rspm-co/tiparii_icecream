@@ -1,0 +1,23 @@
+:root { --blue: #00a0e3; --dark-blue: #0077b8; --ink: #172b4d; --body: #5f6b7a; --line: #e5eef5; --page: #f8fcff; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page); color: var(--body); font-family: Inter, Arial, sans-serif; line-height: 1.7; }
+a { color: inherit; }
+.legal-header { background: #fff; border-bottom: 1px solid var(--line); }
+.legal-header__inner { width: min(1120px, calc(100% - 40px)); min-height: 78px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.legal-logo img { display: block; width: 132px; height: auto; }
+.back-link { color: var(--dark-blue); font: 600 .85rem Poppins, sans-serif; text-decoration: none; }
+.back-link:hover { color: var(--ink); }
+.legal-hero { padding: 74px 0 50px; background: linear-gradient(135deg, #eaf8ff, #fff); }
+.legal-shell { width: min(830px, calc(100% - 40px)); margin: 0 auto; }
+.legal-kicker { margin: 0 0 10px; color: var(--dark-blue); font: 700 .72rem Poppins, sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+.legal-hero h1 { margin: 0; color: var(--ink); font: 700 clamp(2rem, 5vw, 3.4rem)/1.18 Poppins, sans-serif; letter-spacing: -.04em; }
+.legal-updated { margin: 15px 0 0; font-size: .88rem; }
+.legal-content { margin: -8px auto 72px; padding: clamp(28px, 5vw, 52px); background: #fff; border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 16px 45px rgba(0, 119, 184, .07); }
+.legal-content h2 { margin: 35px 0 10px; color: var(--ink); font: 600 1.15rem/1.35 Poppins, sans-serif; }
+.legal-content h2:first-child { margin-top: 0; }
+.legal-content p, .legal-content li { font-size: .93rem; }
+.legal-content p { margin: 0 0 12px; }
+.legal-content ul { padding-left: 20px; margin: 0 0 12px; }
+.legal-content a { color: var(--dark-blue); font-weight: 600; }
+.legal-footer { padding: 24px 20px; border-top: 1px solid var(--line); text-align: center; color: #718096; font-size: .78rem; background: #fff; }
+@media (max-width: 560px) { .legal-header__inner { width: min(100% - 28px, 1120px); min-height: 66px; } .legal-logo img { width: 110px; } .legal-shell { width: min(100% - 28px, 830px); } .legal-hero { padding: 54px 0 36px; } .legal-content { margin-bottom: 44px; border-radius: 14px; } }
